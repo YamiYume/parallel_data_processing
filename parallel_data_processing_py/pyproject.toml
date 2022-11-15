@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "parallel-data-processing-py"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "parallel_data_processing_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+maturin = "^0.13.7"
+numpy = "^1.23.4"
+jupyter = "^1.0.0"
+matplotlib = "^3.6.2"
+seaborn = "^0.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

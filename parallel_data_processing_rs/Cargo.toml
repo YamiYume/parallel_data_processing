@@ -1,0 +1,17 @@
+[package]
+name = "parallel_data_processing_rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+arc-swap = "1.5.1"
+crossbeam-utils = "0.8.12"
+ndarray = "0.15.6"
+numpy = "0.17.2"
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
+
+[profile.release]
+lto = "fat"
