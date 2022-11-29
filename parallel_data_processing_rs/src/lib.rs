@@ -10,7 +10,6 @@ use std::thread;
 #[cfg(target_arch = "x86_64")]
 use std::arch::x86_64;
 use std::arch::x86_64::__m256d;
-
 use std::simd::f64x4;
 
 const CORES: usize = 6;
